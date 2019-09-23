@@ -13,14 +13,14 @@ CUSTOM_PLATFORM_VERSION := 10.0
 
 TARGET_PRODUCT_SHORT := $(subst aosp_,,$(CUSTOM_BUILD))
 
-CUSTOM_VERSION := PixelExperience_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-BETA-$(CUSTOM_BUILD_TYPE)
+CUSTOM_VERSION := Cerberus_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-BETA-$(CUSTOM_BUILD_TYPE)
 CUSTOM_VERSION_PROP := 10
-ROM_FINGERPRINT := PixelExperience/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
+ROM_FINGERPRINT := Cerberus/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
 
 CUSTOM_PROPERTIES := \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.version.display=$(CUSTOM_VERSION) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.pixelexperience.fingerprint=$(ROM_FINGERPRINT)
+    org.cerberus.version=$(CUSTOM_VERSION_PROP) \
+    org.cerberus.version.display=$(CUSTOM_VERSION) \
+    org.cerberus.build_date=$(CUSTOM_BUILD_DATE) \
+    org.cerberus.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.cerberus.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.cerberus.fingerprint=$(ROM_FINGERPRINT)
