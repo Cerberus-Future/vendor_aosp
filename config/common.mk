@@ -152,8 +152,10 @@ include vendor/aosp/config/branding.mk
 # OTA
 include vendor/aosp/config/ota.mk
 
-# GApps
+# Gapps
+ifeq ($(WITH_GAPPS),true)
 include vendor/gapps/config.mk
+endif
 
 # Pixel Style
 include vendor/pixelstyle/config.mk
