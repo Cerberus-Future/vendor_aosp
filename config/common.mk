@@ -158,6 +158,6 @@ include vendor/gapps/config.mk
 endif
 
 # Pixel Style
-include vendor/pixelstyle/config.mk
+include vendor/cerberus/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
