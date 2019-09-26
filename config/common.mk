@@ -153,11 +153,9 @@ include vendor/aosp/config/branding.mk
 include vendor/aosp/config/ota.mk
 
 # Gapps
-ifeq ($(WITH_GAPPS),true)
 include vendor/gapps/config.mk
-endif
 
-# Pixel Style
+# Cerberus Style
 include vendor/cerberus/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
