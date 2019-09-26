@@ -1,12 +1,6 @@
-ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
+ifeq ($(CUSTOM_BUILD_TYPE), Official)
 
-ifeq ($(TARGET_SHIPS_SEPERATE_GAPPS_BUILD), true)
-ifeq ($(WITH_GAPPS), true)
-CUSTOM_OTA_VERSION_CODE := ten_gapps
-else
-CUSTOM_OTA_VERSION_CODE := ten
-endif
-endif
+CUSTOM_OTA_VERSION_CODE := 10
 
 CUSTOM_PROPERTIES += \
     org.cerberus.ota.version_code=$(CUSTOM_OTA_VERSION_CODE) \
