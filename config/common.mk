@@ -159,3 +159,6 @@ include vendor/gapps/config.mk
 include vendor/cerberus/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+# Themes
+include vendor/themes/config/packages.mk
